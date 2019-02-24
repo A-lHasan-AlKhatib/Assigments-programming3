@@ -79,10 +79,10 @@ public class Employee {
         }
         return employees;
     }
-
+    
     @Override
     public String toString() {
-        return "Name : " + name + " Department : " + department + " Salary : " +
-                String.format("%.2f", salary);
+        return "Name : " + name + " ,Department : " + department + " ,Salary : " +
+                String.format("%.2f .", salary);
     }
 }
