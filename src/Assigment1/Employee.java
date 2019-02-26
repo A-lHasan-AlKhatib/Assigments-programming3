@@ -1,4 +1,4 @@
-package hasan;
+package Assigment1;
 
 /**
  *
