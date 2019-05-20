@@ -57,7 +57,8 @@ public class StdFrame extends javax.swing.JFrame {
             allTable.setModel(model);
             
             MainFrame.writeLog("StdFrame opend and all exams has been retrived from the data base . Number of fetched row = "+rows);
-            } catch (ClassNotFoundException ex) {
+            con.close();
+        } catch (ClassNotFoundException ex) {
             Logger.getLogger(StdFrame.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
             Logger.getLogger(StdFrame.class.getName()).log(Level.SEVERE, null, ex);
@@ -300,6 +301,7 @@ public class StdFrame extends javax.swing.JFrame {
             specTable.setModel(model);
             specField.setText("");
             MainFrame.writeLog("Search for exam by "+search+" in the database and the results has been retrived . Number of fetched rows = "+rows);
+            con.close();
             } catch (SQLException ex) {
                 Logger.getLogger(StdFrame.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -317,18 +319,14 @@ public class StdFrame extends javax.swing.JFrame {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java","root","");
             PreparedStatement ps = con.prepareStatement("SELECT * FROM exams_info");
-            ResultSet set = ps.executeQuery();          
-            
-            
-            
+            ResultSet set = ps.executeQuery();                            
             try {
                 set.last();            
                 int rows = set.getRow();
             set.beforeFirst();
             Object[][] data = new String[rows][5];
              String s =String.format("%-25s %-25s %-10s %-10s %10s\n","Teacher Name", "Course Name",
-                    "Room", "Date", "Time");
-            
+                    "Room", "Date", "Time");            
             for (int i = 0; i < data.length; i++) {
                 set.next();
                 data[i][0] = set.getString("Teatcher name");
@@ -352,6 +350,7 @@ public class StdFrame extends javax.swing.JFrame {
             allTable.setModel(model);
             specField.setText("");
             MainFrame.writeLog("Refresh and all exams has been retrived from the data base . Number of fetched rows = "+rows);
+            con.close();
             } catch (SQLException ex) {
                 Logger.getLogger(StdFrame.class.getName()).log(Level.SEVERE, null, ex);
             }

@@ -4,3 +4,16 @@ Refresh and all exams has been retrived from the data base . Number of fetched r
 Search for exam by course = sketch in the database and the results has been retrived . Number of fetched rows = 1 : At time : 2019/05/20/ 10:30:58 *****EndOfLine.
 Search for exam by teacher = sketch in the database and the results has been retrived . Number of fetched rows = 0 : At time : 2019/05/20/ 10:31:22 *****EndOfLine.
 Main Opend : At time : 2019/05/20/ 10:31:47 *****EndOfLine.
+Main Opend : At time : 2019/05/20/ 11:48:09 *****EndOfLine.
+StdFrame opend and all exams has been retrived from the data base . Number of fetched row = 5 : At time : 2019/05/20/ 11:49:29 *****EndOfLine.
+Search for exam by course = Programming in the database and the results has been retrived . Number of fetched rows = 2 : At time : 2019/05/20/ 11:49:47 *****EndOfLine.
+Main Opend : At time : 2019/05/20/ 11:49:52 *****EndOfLine.
+Teacher login frame has been opend : At time : 2019/05/20/ 11:49:53 *****EndOfLine.
+Teacher frame has been opend : At time : 2019/05/20/ 11:50:04 *****EndOfLine.
+All exams for teacher with id = 123has been retrived : At time : 2019/05/20/ 11:50:05 *****EndOfLine.
+All courses and exams for teacher id = 123 has been retrived. : At time : 2019/05/20/ 11:50:05 *****EndOfLine.
+Login succeeded. Teacher ID = 123 : At time : 2019/05/20/ 11:50:05 *****EndOfLine.
+All exams for teacher with id = 123has been retrived : At time : 2019/05/20/ 11:50:33 *****EndOfLine.
+Exam has been added with id = 11 offer_id = 4 room = K545 date = 2019-05-20 time = 10:09 : At time : 2019/05/20/ 11:50:35 *****EndOfLine.
+All exams for teacher with id = 123has been retrived : At time : 2019/05/20/ 11:50:48 *****EndOfLine.
+Exam with id = 11has been deleted. : At time : 2019/05/20/ 11:50:48 *****EndOfLine.

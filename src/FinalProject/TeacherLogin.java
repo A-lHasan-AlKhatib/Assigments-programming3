@@ -149,6 +149,7 @@ public class TeacherLogin extends javax.swing.JFrame {
             } else{
                 MainFrame.writeLog("Login failed. Teacher ID = "+result);
             }
+            con.close();
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(TeacherLogin.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {

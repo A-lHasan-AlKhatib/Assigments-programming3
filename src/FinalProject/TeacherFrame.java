@@ -82,6 +82,7 @@ public class TeacherFrame extends javax.swing.JFrame {
             ActionEvent event = new ActionEvent(viewTable, 0, "");
             buttonViewActionPerformed(event);
             MainFrame.writeLog("All courses and exams for teacher id = "+id+" has been retrived.");
+            con.close();
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(TeacherFrame.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
@@ -613,6 +614,7 @@ public class TeacherFrame extends javax.swing.JFrame {
             DefaultTableModel model = new DefaultTableModel(data, cols);
             viewTable.setModel(model);
             MainFrame.writeLog("All exams for teacher with id = "+ id + "has been retrived");
+            con.close();
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(TeacherFrame.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
