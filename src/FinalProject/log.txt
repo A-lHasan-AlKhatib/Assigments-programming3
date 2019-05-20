@@ -1,0 +1,6 @@
+Main Opend : At time : 2019/05/20/ 10:30:08 *****EndOfLine.
+StdFrame opend and all exams has been retrived from the data base . Number of fetched row = 5 : At time : 2019/05/20/ 10:30:21 *****EndOfLine.
+Refresh and all exams has been retrived from the data base . Number of fetched rows = 5 : At time : 2019/05/20/ 10:30:36 *****EndOfLine.
+Search for exam by course = sketch in the database and the results has been retrived . Number of fetched rows = 1 : At time : 2019/05/20/ 10:30:58 *****EndOfLine.
+Search for exam by teacher = sketch in the database and the results has been retrived . Number of fetched rows = 0 : At time : 2019/05/20/ 10:31:22 *****EndOfLine.
+Main Opend : At time : 2019/05/20/ 10:31:47 *****EndOfLine.
